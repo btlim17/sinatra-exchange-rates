@@ -1,0 +1,9 @@
+<!--/views/flex_og_currency.erb-->
+<h1>Convert <%= @og_currency%></h1>
+
+<div>Go <a href = "/">back</a></div>
+<ol>
+  <% @currencies.each do |country_code, currency_country| %>
+    <li><a href = "/<%= @og_currency%>/<%= country_code %>">Convert 1 <%= @og_currency%> to <%= country_code%>...</a></li>
+  <% end %>
+</ol>

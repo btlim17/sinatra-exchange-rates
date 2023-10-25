@@ -1,0 +1,8 @@
+<!--/views/home.erb-->
+<h1>Currency pairs</h1>
+
+<ol>
+<% @currencies.each do |country_code, currency_country| %>
+  <li><a href = "/<%= country_code%>"> Convert 1 <%= country_code%> to...</li>
+<% end %>
+</ol>
